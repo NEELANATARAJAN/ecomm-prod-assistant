@@ -5,7 +5,22 @@ build/
 dist/
 wheels/
 *.egg-info
+*.egg
+
 
 # Virtual environments
 .venv
 .env
+venv/
+env/
+
+
+logs/
+*.log
+*.logs
+
+.ipynb_checkpoints/
+
+archive/
+
+.vscode/

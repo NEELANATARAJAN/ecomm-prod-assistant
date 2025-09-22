@@ -2,9 +2,9 @@ import os
 import sys
 import json
 from dotenv import load_dotenv
-from logger import GLOBAL_LOGGER as log
-from utils.config_loader import load_config
-from exception.custom_exception import ProductAssistantException
+from product_assistant.logger import GLOBAL_LOGGER as log
+from product_assistant.utils.config_loader import load_config
+from product_assistant.exception.custom_exception import ProductAssistantException
 import asyncio
 from langchain_openai import ChatOpenAI
 from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings

@@ -1,7 +1,7 @@
 import yaml
 import os
 from pathlib import Path
-from logger import GLOBAL_LOGGER as log
+from product_assistant.logger import GLOBAL_LOGGER as log
 
 def _project_root() -> Path:
     return Path(__file__).resolve().parents[1]
