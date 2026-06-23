@@ -24,3 +24,5 @@ logs/
 archive/
 
 .vscode/
+
+*.csv
