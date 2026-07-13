@@ -11,7 +11,8 @@ from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmb
 from langchain_groq import ChatGroq
 
 class ApiKeyManager:
-    REQUIRED_KEYS = ["GROQ_API_KEY", "GOOGLE_API_KEY","OPENAI_API_KEY"]
+    # REQUIRED_KEYS = ["GROQ_API_KEY", "GOOGLE_API_KEY","OPENAI_API_KEY"]
+    REQUIRED_KEYS = ["GOOGLE_API_KEY","OPENAI_API_KEY"]
 
     def __init__(self):
         self.api_keys = {}
@@ -118,13 +119,13 @@ class ModelLoader:
                 temperature=temperature
                 # max_output_tokens=max_output_tokens
             )
-        elif provider=="groq":
-            return ChatGroq(
-                model=model_name,
-                api_key=self.api_key_mgr.get("GROQ_API_KEY"),
-                temperature=temperature,
-                # max_output_tokens=max_output_tokens
-            )
+        # elif provider=="groq":
+        #     return ChatGroq(
+        #         model=model_name,
+        #         api_key=self.api_key_mgr.get("GROQ_API_KEY"),
+        #         temperature=temperature,
+        #         # max_output_tokens=max_output_tokens
+        #     )
         elif provider=="openai":
             return ChatOpenAI(
                 model=model_name,
