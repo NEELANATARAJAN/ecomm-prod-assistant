@@ -8,7 +8,7 @@ from product_assistant.exception.custom_exception import ProductAssistantExcepti
 import asyncio
 from langchain_openai import ChatOpenAI
 from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
-from langchain_groq import ChatGroq
+# from langchain_groq import ChatGroq
 
 class ApiKeyManager:
     # REQUIRED_KEYS = ["GROQ_API_KEY", "GOOGLE_API_KEY","OPENAI_API_KEY"]
